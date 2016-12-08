@@ -1,0 +1,47 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		your input
+	</title>
+	<style type="text/css">
+
+
+
+		body{
+			background-color: #fffaaa;
+		}
+		h1 a{
+			color:#333333;
+			text-shadow: 2px 1px 2px #000000; 
+			font-style: italic;
+			font-weight: bolder;
+			text-decoration: none;
+	
+		}
+		
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+	<body>
+		<h1 class="header"><a href="/">TELL YOUR STORY</a></h1>
+		<hr>
+		<hr>
+		{% for art in arts%}
+		<h3>
+			{{art.title}}
+		</h3>
+		<br>
+		<br>
+		<p>
+			{{art.story}}
+		</p>
+		{% endfor %}
+		<p>
+			 <a href="/post">post your story</a>
+		</p>
+	</body>
+</html>

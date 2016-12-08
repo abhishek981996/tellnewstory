@@ -1,0 +1,50 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		enter your post
+	</title>
+	<link rel="stylesheet" type="text/javascript" href="">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+<div>
+	<div>
+		
+			<a href="/">Home</a>
+		
+
+	</div>
+</div>
+<div>
+	<h2>
+		RULES:
+	</h2>
+		<ol>
+			<li>story should contain appropraite title</li>
+			<li>Unnessecary use of shortcut should be avoided</li>
+			<li>use of bad language should be avoided..</li>
+			<li>Body of the story shpould contain atleast 100 lines</li>
+		</ol>
+</div>
+<form method="post">
+	<label>
+		<h3> TITLE </h3>
+	<input type="text" name="title" value="{{title}}">
+	<h3>Story</h3>
+	<textarea name="story">{{story}}</textarea>
+	<h3>Your Full name</h3>
+	<input type="text" name="name" value="{{name}}">
+	</label>
+	<div class="error">
+		{{error}}
+	</div>
+	<input type="submit" name="submit">
+</form>
+	
+	
+</body>
+</html>
